@@ -11,11 +11,10 @@ let prevRating;
 for (let i = 0; i < ratingNums.length; i++) {
   ratingNums[i].addEventListener("click", () => {
     if (israted == true) {
-      prevRating.style =
-        "background-color: hsla(216, 12%, 54%, 0.138); color: hsl(216, 12%, 54%);";
+      prevRating.classList.remove("selected");
     }
     ratingNum = ratingNums[i].id;
-    ratingNums[i].style = "background-color: hsl(25, 97%, 53%); color: white;";
+    ratingNums[i].classList.add("selected");
     prevRating = ratingNums[i];
     israted = true;
   });
