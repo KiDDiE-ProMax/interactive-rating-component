@@ -123,6 +123,11 @@ body {
   transition: top 0.5s ease-in-out;
 }
 
+.selected{
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
 @media (max-width: 430px) {
   .container {
     width: 90%;
